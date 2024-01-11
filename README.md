@@ -71,9 +71,11 @@ for (let i = 0; i < 6; i++) {
 ```
 ### Continued development
 
-- Still there is more learn about media query and responsive design.
+- Still there is more to learn about media query and responsive design.
 
 - Styling can be improved.
+
+- Boreder leak can be fixed.
 
 ### Useful resources
 
