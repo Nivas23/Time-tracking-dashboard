@@ -8,12 +8,6 @@ body {
   font-family: "Rubik", sans-serif;
   background-color: hsl(226, 43%, 10%);
 }
-/* .container {
-  display: grid;
-  grid-template-rows: repeat(2, 185px);
-  grid-template-columns: repeat(auto-fit, minmax(190px,1fr));
-  gap: 20px;
-} */
 
 .container {
   display: grid;
@@ -21,7 +15,6 @@ body {
   grid-template-columns: repeat(4, 190px);
   gap: 20px;
 }
-
 
 .photo {
   scale: 0.25;
@@ -50,7 +43,11 @@ body {
 .option {
   color: white;
   padding: 20px;
-  font-size: 0.8em;
+  font-size: .85em;
+}
+
+#weekly ,#monthly{
+    color: hsl(236, 100%, 87%);
 }
 
 .icon {
@@ -157,128 +154,121 @@ body {
   overflow: hidden;
 }
 
-
-
-
 @media screen and (min-width: 310px) and (max-width: 880px) {
-    .container {
-      display: grid;
-      grid-template-rows: 190px repeat(6, 155px);
-      grid-template-columns: repeat(1, 310px);
-      gap: 20px;
-      margin: 10px;
-    }
-    body {
-      height: fit-content;
-      width:auto;
-      overflow-y: visible;
-    }
-    .content {
-      position: relative;
-      top: 35px;
-      /* padding: 10px; */
-      border-radius: 15px;
-      background-clip: border-box;
-      background-color: hsl(235, 46%, 20%);
-    }
-    .option {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position:relative;
-        left:13px;
-        /* padding: 20px; */
-        font-size: 1em;
-      }
-    .icon {
-        position: absolute;
-        top: -12px;
-        left: 215px;
-        scale: .9;
-      }
-      .title {
-        color: white;
-        position: relative;
-        padding: 25px 20px 5px;
-        font-size: 1.1em;
-        font-weight: 500;
-      }
-      .dots {
-        position: absolute;
-        scale: 0.9;
-        left: 260px;
-        top: 35px;
-      }
-      .time {
-        font-size: 2em;
-        padding: 0px 20px;
-        font-weight: 300;
-      }
-      .previous {
-        font-size: .8em;
-        position: relative;
-        left:160px;
-        bottom:37px;
-        padding: 10px 20px 20px;
-      }
-
-      .photo {
-        scale: 0.25;
-        position: absolute;
-        top: -65px;
-        right: 130px;
-        border: 8px solid white;
-        border-radius: 200px;
-      }
-      .profile {
-        padding: 35px 0px 35px 103px;
-        border-radius: 10px;
-        color: white;
-        background-color: hsl(246, 80%, 60%);
-      }
-
-      .heading {
-        font-size: 0.8em;
-        color: hsl(236, 100%, 87%);
-        padding: 5px 0px;
-      }
-      .name {
-        font-size: 1.4em;
-        font-weight: 300;
-      }
-      .item1 {
-        grid-area: 1 / 1 / 1 / 1;
-        background-color: hsl(235, 46%, 20%);
-        position: relative;
-        border-radius: 10px;
-      }
-      .item2{
-        border-radius: 15px;
-      }
-      .item3{
-        border-radius: 15px;
-      }
-      .item4{
-        border-radius: 15px;
-      }
-      .item5{
-        border-radius: 15px;
-      }
-      .item6{
-        border-radius: 15px;
-      }
-      .item7{
-        border-radius: 15px;
-      }
-      .item3 .icon {
-        top: -8px;
-      }
-      
-      .item5 .icon {
-        top: -4px;
-      }
-      
-      .item6 .icon {
-        top: -17px;
-      }
+  .container {
+    display: grid;
+    grid-template-rows: 190px repeat(6, 155px);
+    grid-template-columns: repeat(1, 310px);
+    gap: 20px;
+    margin: 10px;
   }
+  body {
+    height: fit-content;
+    width: auto;
+    overflow-y: visible;
+  }
+  .content {
+    position: relative;
+    top: 35px;
+    /* padding: 10px; */
+    border-radius: 15px;
+    background-clip: border-box;
+    background-color: hsl(235, 46%, 20%);
+  }
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 13px;
+    /* padding: 20px; */
+    font-size: 1em;
+  }
+  .icon {
+    position: absolute;
+    top: -12px;
+    left: 215px;
+    scale: 0.9;
+  }
+  .title {
+    position: relative;
+    padding: 25px 20px 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  .dots {
+    position: absolute;
+    scale: 0.9;
+    left: 260px;
+    top: 35px;
+  }
+  .time {
+    font-size: 2em;
+    padding: 0px 20px;
+    font-weight: 300;
+  }
+  .previous {
+    font-size: 0.8em;
+    position: relative;
+    left: 160px;
+    bottom: 37px;
+    padding: 10px 20px 20px;
+  }
+
+  .photo {
+    scale: 0.25;
+    position: absolute;
+    top: -65px;
+    right: 130px;
+    border: 8px solid white;
+    border-radius: 200px;
+  }
+  .profile {
+    padding: 35px 0px 35px 103px;
+    border-radius: 10px;
+  }
+
+  .heading {
+    font-size: 0.8em;
+    padding: 5px 0px;
+  }
+  .name {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+  .item1 {
+    grid-area: 1 / 1 / 1 / 1;
+    position: relative;
+    border-radius: 10px;
+  }
+  .item2 {
+    border-radius: 15px;
+  }
+  .item3 {
+    border-radius: 15px;
+  }
+  .item4 {
+    border-radius: 15px;
+  }
+  .item5 {
+    border-radius: 15px;
+  }
+  .item6 {
+    border-radius: 15px;
+  }
+  .item7 {
+    border-radius: 15px;
+  }
+
+  .item3 .icon {
+    top: -8px;
+  }
+
+  .item5 .icon {
+    top: -4px;
+  }
+
+  .item6 .icon {
+    top: -17px;
+  }
+}
