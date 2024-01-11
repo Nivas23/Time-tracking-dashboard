@@ -7,10 +7,11 @@ function option() {
   let title = ["work", "play", "study", "exercise", "social", "selfcare"];
   let color = ["color: hsl(236, 100%, 87%)", "color: white"];
   let time = { daily: "Yesterday", weekly: "Last Week", monthly: "Last Month" };
-  fetch("http://localhost:3000/")
+  
+  fetch(" https://api.npoint.io/4c79e16b85ad02856299")
     .then((response) => response.json())
     .then((json) => {
-      // console.log(json);
+      console.log(json);
       data = json;
       if (choice === "daily") {
         daily++;
